@@ -2,9 +2,9 @@ var onix = require("onix");
 
 var xml = onix.create({
     from: {
-        company: "GitBook",
-        person: "Samy Pesse",
-        email: "samy@gitbook.com"
+        company: "WiseOwlPublishing",
+        person: "Daniel Rees",
+        email: "noreply@mailinator.com"
     },
     suplier: {
         name: "ePubDirect",
@@ -13,7 +13,7 @@ var xml = onix.create({
     products: [
         {
             // Single record reference which will uniquely identify the product
-            record: "gitbook.com-bookId",
+            record: "TheWiseOldGreyOwl-9781707518135",
 
             // Notification type
             notification: onix.codes.NOTIFICATION.ADVANCE,
@@ -21,11 +21,11 @@ var xml = onix.create({
             // ISBN or other id
             id: {
                 type: onix.codes.PRODUCTID.ISBN13,
-                value: '978123456789'
+                value: '9781707518135'
             },
 
             //
-            title: "My Awesome Book",
+            title: "The Wise Old Grey Owl",
 
             // Language code as ISO 639
             language: "eng",
